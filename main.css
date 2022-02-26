@@ -1,0 +1,51 @@
+.digital-brain-chrome-extension-1-0-0-dynamic-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin: 25px 0px;
+  border: 1px solid dashed lightblue;
+  flex-direction: column;
+}
+
+.digital-brain-chrome-extension-1-0-0-btn {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 14px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  margin: 10px;
+}
+
+.digital-brain-chrome-extension-1-0-0-btn:active,
+.digital-brain-chrome-extension-1-0-0-btn:hover {
+  outline: 0;
+}
+
+.digital-brain-chrome-extension-1-0-0-btn:hover {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .digital-brain-chrome-extension-1-0-0-btn {
+    font-size: 12px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}

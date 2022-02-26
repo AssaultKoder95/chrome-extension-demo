@@ -1,0 +1,19 @@
+{
+  "name": "Digital Brain Chrome Extension Demo",
+  "version": "1.0.0",
+  "description": "A demo chrome extension",
+  "author": "Abhishek Khanna",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://digitalbrain.zendesk.com/agent/tickets/*"],
+      "js": ["content-script.js"],
+      "css": ["main.css"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Digital Brain App",
+    "default_icon": "db-icon.png"
+  },
+  "manifest_version": 2
+}
