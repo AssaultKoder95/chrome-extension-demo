@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  margin: 25px 0px;
+  height: 200px;
+  margin: 10px;
   border: 1px solid dashed lightblue;
   flex-direction: column;
+  max-width: 100%;
+  background-color: white;
 }
-
 .digital-brain-chrome-extension-1-0-0-btn {
   align-items: center;
   background-color: rgba(240, 240, 240, 0.26);
@@ -21,31 +22,92 @@
   font-size: 12px;
   justify-content: center;
   line-height: 14px;
-  max-width: 100%;
+  max-width: 90%;
   padding: 14px 22px;
   text-decoration: none;
   transition: all 0.2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
+  width: 90%;
   margin: 10px;
 }
-
 .digital-brain-chrome-extension-1-0-0-btn:active,
 .digital-brain-chrome-extension-1-0-0-btn:hover {
   outline: 0;
 }
-
 .digital-brain-chrome-extension-1-0-0-btn:hover {
   background-color: #ffffff;
   border-color: rgba(0, 0, 0, 0.19);
 }
-
 @media (min-width: 768px) {
   .digital-brain-chrome-extension-1-0-0-btn {
     font-size: 12px;
-    min-width: 200px;
+    min-width: 90%;
     padding: 14px 16px;
   }
 }
+
+/* TOAST ITEM CSS START */
+.wrapper {
+  width: 200px;
+  padding: 30px 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  overflow: hidden;
+}
+
+#show-toast {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #101020;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toast {
+  width: 150px;
+  height: 120px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(75, 50, 50, 0.05);
+  border-left: 8px solid #47d764;
+  border-radius: 7px;
+  display: flex;
+  grid-template-columns: 1.2fr 6fr 0.5fr;
+  transform: translate(400px);
+  transition: 1s;
+  text-align: left;
+}
+
+.toast-body {
+  align-self: center;
+}
+
+.toast-body p:first-child {
+  color: #101020;
+  font-weight: 600;
+  font-size: 16px;
+}
+.toast-body p:last-child {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #656565;
+  font-weight: 400;
+}
+
+#toast button {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 25px;
+  line-height: 0;
+  color: #656565;
+  cursor: pointer;
+}
+
+/* TOAST ITEM CSS END */
